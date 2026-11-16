@@ -24,13 +24,13 @@ export default function HeroSection({ onNavigate }) {
       id="hero"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setMousePos({ x: 0, y: 0 })}
-      className="relative min-h-screen w-full bg-[#000000] text-white pt-24 pb-10 flex flex-col justify-between overflow-hidden select-none border-b border-white/10"
+      className="relative min-h-screen w-full bg-[#000000] text-white pt-20 md:pt-24 pb-10 flex flex-col justify-between overflow-hidden select-none border-b border-white/10"
     >
       {/* Subtle architectural background grid */}
       <div className="pointer-events-none absolute inset-0 bg-grid-dark opacity-50" />
 
-      {/* Top PDF Slide Header Bar */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12">
+      {/* Top PDF Slide Header Bar — hidden on mobile (navbar already shows branding) */}
+      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12 hidden md:block">
         <div className="flex items-center justify-between pb-5 border-b border-white/20">
           <div className="flex items-center gap-3">
             <img
