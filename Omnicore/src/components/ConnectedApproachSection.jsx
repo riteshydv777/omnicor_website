@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { TARGET_SECTORS, END_TO_END_STAGES } from '../data/capabilitiesData';
 import { CrosshairIcon, ArrowRightIcon } from './CustomIcons';
@@ -11,13 +11,13 @@ export default function ConnectedApproachSection() {
   return (
     <section
       id="connected-approach"
-      className="relative min-h-screen w-full bg-[#F3F3F0] text-[#0A0A0A] pt-24 pb-10 flex flex-col justify-between overflow-hidden border-b border-black/12"
+      className="relative min-h-screen w-full bg-[#F3F3F0] text-[#0A0A0A] pt-20 md:pt-24 pb-10 flex flex-col justify-between overflow-hidden border-b border-black/12"
     >
       {/* Subtle architectural background grid */}
       <div className="pointer-events-none absolute inset-0 bg-grid-light opacity-70" />
 
       {/* Top PDF Slide Header Bar */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12">
+      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12 hidden md:block">
         <div className="flex items-center justify-between pb-5 border-b border-black/15">
           <div className="flex items-center gap-3">
             <img
@@ -188,7 +188,7 @@ export default function ConnectedApproachSection() {
       </div>
 
       {/* Bottom PDF Slide Footer Bar */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12">
+      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12 hidden md:block">
         <div className="pt-5 border-t border-black/15 flex items-center justify-between text-[10px] sm:text-xs font-mono-tech text-black/65 uppercase">
           <span>FROM A SINGLE CAPABILITY TO AN END-TO-END SOLUTION</span>
           <span className="text-[#0A0A0A] font-medium">11 / 12</span>

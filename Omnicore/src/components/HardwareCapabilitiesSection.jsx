@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { HARDWARE_CAPABILITIES, HARDWARE_MARKETS } from '../data/capabilitiesData';
 import { CrosshairIcon, ArrowUpRightIcon } from './CustomIcons';
@@ -68,13 +68,13 @@ export default function HardwareCapabilitiesSection({ onSelectCapability }) {
   return (
     <section
       id="hardware-capabilities"
-      className="relative min-h-screen w-full bg-[#F3F3F0] text-[#0A0A0A] pt-24 pb-10 flex flex-col justify-between overflow-hidden border-b border-black/12"
+      className="relative min-h-screen w-full bg-[#F3F3F0] text-[#0A0A0A] pt-20 md:pt-24 pb-10 flex flex-col justify-between overflow-hidden border-b border-black/12"
     >
       {/* Subtle architectural background grid */}
       <div className="pointer-events-none absolute inset-0 bg-grid-light opacity-70" />
 
       {/* Top PDF Slide Header Bar */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12">
+      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12 hidden md:block">
         <div className="flex items-center justify-between pb-5 border-b border-black/15">
           <div className="flex items-center gap-3">
             <img
@@ -205,7 +205,7 @@ export default function HardwareCapabilitiesSection({ onSelectCapability }) {
       </div>
 
       {/* Bottom PDF Slide Footer Bar */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12">
+      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12 hidden md:block">
         <div className="pt-5 border-t border-black/15 flex items-center justify-between text-[10px] sm:text-xs font-mono-tech text-black/65 uppercase">
           <span>HARDWARE ENGINEERING &amp; MANUFACTURING</span>
           <span className="text-[#0A0A0A] font-medium">04 / 12</span>

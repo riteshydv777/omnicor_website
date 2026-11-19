@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CrosshairIcon } from './CustomIcons';
 import { MaskedHeadline } from './ScrollChoreography';
@@ -25,13 +25,13 @@ export default function SecurityHeroSection() {
       id="security-hero"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setMousePos({ x: 0, y: 0 })}
-      className="relative min-h-screen w-full bg-[#000000] text-white pt-24 pb-10 flex flex-col justify-between overflow-hidden border-b border-white/10"
+      className="relative min-h-screen w-full bg-[#000000] text-white pt-20 md:pt-24 pb-10 flex flex-col justify-between overflow-hidden border-b border-white/10"
     >
       {/* Subtle architectural background grid */}
       <div className="pointer-events-none absolute inset-0 bg-grid-dark opacity-45" />
 
       {/* Top PDF Slide Header Bar */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12">
+      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12 hidden md:block">
         <div className="flex items-center justify-between pb-5 border-b border-white/20">
           <div className="flex items-center gap-3">
             <img
@@ -154,7 +154,7 @@ export default function SecurityHeroSection() {
       </div>
 
       {/* Bottom PDF Slide Footer Bar */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12">
+      <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 md:px-12 hidden md:block">
         <div className="pt-5 border-t border-white/20 flex items-center justify-between text-[10px] sm:text-xs font-mono-tech text-white/70 uppercase">
           <span>PROTECTION, CONSIDERED AT EVERY LAYER</span>
           <span className="text-white font-medium">09 / 12</span>
